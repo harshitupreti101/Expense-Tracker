@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            height:100%;
+            margin:0;
+            box-sizing: border-box;
+        }
+        body{
+            height:100%;
+            margin:0;
+            box-sizing: border-box;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            text-align:center;
+            font-family: sans-serif;
+        }
+        .box{
+            background-color: #1B1B1B;
+            border-radius:10px;
+            width:380px;
+
+        }
+        #expense-name, #amt {
+            background-color:#2F2F2F;
+            border-radius:7px;
+            padding:13px;
+            color:white;
+            font-weight: bold;
+            width:100px;
+        }
+        #expense-btn {
+            background-color:#2F2F2F;
+            border-radius:7px;
+            padding:10px;
+            background-color:#5D00E9;
+            color:white;
+            font-weight: bold;
+            width: 75px;
+            text-align: center;
+        }
+    
+        #expense-name, #amt, #expense-btn {
+            vertical-align: middle;
+        }
+        #total-amt {
+            padding-bottom:10px;  
+        }
+        #all-expense div{
+            background-color:#2F2F2F;
+            border-radius:7px;
+            padding:7px;
+            display:flex;   
+            color:white; 
+            justify-content:space-between;   
+            font-weight: bold;
+            width:320px;
+            margin-left:25px;
+            margin-bottom:10px;
+        }
+        #all-expense div button {
+            background-color:#5D00E9;
+            padding:7px;
+            color:white;
+            border-radius:5px;
+            margin-right:0px;
+            margin-left:10px;
+            box-sizing: border-box;
+            font-size:13px;
+            font-weight: bold;
+        }
+        #all-expense div span {
+            padding-top:7px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Expense Tracker</h1>
+        <div class="input">
+            <input type="text" id="expense-name" placeholder="Expense name">
+            <input type="text" id="amt" placeholder="Amount">
+            <button id="expense-btn">Add Expense</button>
+        </div>
+        <h2>Expenses</h2>
+        <div id="all-expense">
+
+        </div>
+        <div id="total-amt">Total:$0.00</div>
+    </div>
+    <script src="i.js"></script>
+</body>
+</html>
